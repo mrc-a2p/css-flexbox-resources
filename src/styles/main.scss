@@ -1,0 +1,108 @@
+// ****** Our base variables ******* //
+$font-family-base : 'Raleway', sans-serif;
+$font-family-head-base : 'Nothing You Could Do', cursive; // Custom
+$font-family-lead-base : 'Montserrat', sans-serif; // Custom
+// Font Weight Base
+$font-weight-light:           100 !default;
+$font-weight-normal:          500 !default;
+$font-weight-bold:            700 !default;
+// @import "./bootstrap-variables"; // --- Vendors Variables
+// @import "vendors/bootstrap/bootstrap"; // --- Vendors Bootstrap 4
+
+
+//  Imports
+//  ───────────────────────────────────
+@import "base/normalize"; // ---> Normalize
+@import "base/variables"; // ---> Vendors Variables
+//@import "base/grid";     //  ---> Grid
+//@import "base/grd-grid"; //  ---> Css Grid
+@import "base/flexbox"; //  ---> Css flexbox
+
+//  Overwrites
+//  ───────────────────────────────────
+
+:root {
+    font-size: $root-font-size;
+}
+  
+
+//  Classes and ID's
+//  ───────────────────────────────────
+
+// .container {
+//     margin: auto;
+//     background: $bg-color;
+//     min-height: 100vh;
+//     padding: $padding-container;
+//     max-width: $width-container;
+  
+//     &.fluid {
+//       max-width: 100%;
+//     }
+// }
+
+.container{
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  padding:10px;
+  border: 10px solid red;
+  margin: 20px;
+
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+
+  justify-content: center;
+  align-items: center; // // grupos de elementos, una linea
+
+  // align-content: center; // grupos de elementos, varias lineas
+
+  .element{
+    flex-grow: 1; //cree elemento
+    //flex-shrink: 1; //decrece elemneto
+    color:#fff;
+    margin: 5px;
+    flex-basis: 150px; //width: 50px; dinamico
+    height: 50px;
+    background-color: green;
+    text-align: center;
+  }
+  .element2{
+    order: 2;
+  }
+  .element3{
+    align-self: flex-start;
+    // height: auto;
+  }
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color:#fff;
+	background: #f2f2f2;
+	font-family: Arial;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0; padding: 10px;
+}
+
+.principal {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.aux {
+	text-align: center;
+	background: #00796B;
+}
+
+.header { background: #303F9F; }
+.sidebar1 { background: #1976D2; }
+.contenido {background: #000;}
+.sidebar2 { background: #E64A19; }
+.footer { background: #388E3C; }

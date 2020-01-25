@@ -1,0 +1,69 @@
+{
+  "name": "css-flexbox-config",
+  "version": "1.0.0",
+  "description": "Css Flexbox Files",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "node:start": "NODE_ENV=dev gulp dev",
+    "node:build": "NODE_ENV=prod gulp clean && gulp build",
+    "node:serve": "http-server dist/static -p 3000"
+  },
+  "keywords": [],
+  "author": "AAV",
+  "license": "",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache": "^1.1.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.3.1",
+    "gulp-file-include": "^2.1.1",
+    "gulp-imagemin": "^7.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-tag-include-html": "^1.4.8",
+    "gulp-twig": "^1.2.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^4.0.0"
+  },
+  "comments": {
+    "private": true,
+    "dependencies": "we use jQuery because of reasons",
+    "repository": "our beloved repo",
+    "license": "we love MIT, so why not",
+    "devDependencies": {
+      "@babel/core": "it's @ version 7.7.5 because of...",
+      "gulp-rename": "why not"
+    },
+    "browserslist": {
+      "production": [
+        "> 1%",
+        "ie 10"
+      ],
+      "modern": [
+        "last 1 chrome version",
+        "last 1 firefox version"
+      ],
+      "ssr": [
+        "node 12"
+      ]
+    },
+    "include-html-html": {
+      "gulp-file-include": [
+        "^2.1.1"
+      ],
+      "gulp-tag-include-html": [
+        "^1.4.8"
+      ]
+    }
+  }
+}
