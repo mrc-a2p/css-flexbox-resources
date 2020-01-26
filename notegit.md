@@ -23,3 +23,8 @@ git pull origin nombre-rama
 ------como fusion¡ar ramas------
 git merge nombre-rama
 
+
+------como eliminar rama -------
+ git branch -d nombre-rama
+ 
+
