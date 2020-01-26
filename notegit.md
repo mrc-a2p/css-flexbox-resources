@@ -19,3 +19,7 @@ git checkout nombre-rama
 ------descargar del servidor a local----
 git pull origin nombre-rama
 
+
+------como fusion¡ar ramas------
+git merge nombre-rama
+
